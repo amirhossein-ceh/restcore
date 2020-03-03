@@ -4,6 +4,7 @@ $router = new \Core\Router();
 
 //Routing
 
-$router->add('/test' , 'HomeController@index');
+$router->add('/' , 'HomeController@index');
 
+//don't touch this return
 return $router;

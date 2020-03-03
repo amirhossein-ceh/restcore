@@ -13,5 +13,8 @@
       "App\\": "App/",
       "Core\\": "Core/"
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
   }
 }
