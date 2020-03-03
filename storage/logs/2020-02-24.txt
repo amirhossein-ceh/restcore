@@ -1,0 +1,36 @@
+[24-Feb-2020 17:31:21 Europe/Berlin] <h1>Fatal error</h1>
+<p>Uncaught exception : 'Illuminate\Database\QueryException'</p>
+<p>Message : 'SQLSTATE[HY000] [1049] Unknown database 'rest' (SQL: select * from `users`)'</p>
+<p>Stack trace : <pre>#0 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Connection.php(333): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2130): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2118): Illuminate\Database\Query\Builder->runSelect()
+#4 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2604): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#5 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2119): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#6 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Eloquent/Builder.php(521): Illuminate\Database\Query\Builder->get(Array)
+#7 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Eloquent/Builder.php(505): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 /opt/lampp/htdocs/RestCore/App/Controllers/HomeController.php(13): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: App\Controllers\HomeController->index()
+#10 /opt/lampp/htdocs/RestCore/Core/Router.php(74): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/RestCore/public/index.php(11): Core\Router->dispatch(NULL)
+#12 {main}</pre></p>
+<p>Throw in : '/opt/lampp/htdocs/RestCore/vendor/illuminate/database/Connection.php' on line 664</p>
+
+[24-Feb-2020 17:31:22 Europe/Berlin] <h1>Fatal error</h1>
+<p>Uncaught exception : 'Illuminate\Database\QueryException'</p>
+<p>Message : 'SQLSTATE[HY000] [1049] Unknown database 'rest' (SQL: select * from `users`)'</p>
+<p>Stack trace : <pre>#0 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Connection.php(333): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2130): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2118): Illuminate\Database\Query\Builder->runSelect()
+#4 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2604): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#5 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Query/Builder.php(2119): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#6 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Eloquent/Builder.php(521): Illuminate\Database\Query\Builder->get(Array)
+#7 /opt/lampp/htdocs/RestCore/vendor/illuminate/database/Eloquent/Builder.php(505): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 /opt/lampp/htdocs/RestCore/App/Controllers/HomeController.php(13): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: App\Controllers\HomeController->index()
+#10 /opt/lampp/htdocs/RestCore/Core/Router.php(74): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/RestCore/public/index.php(11): Core\Router->dispatch(NULL)
+#12 {main}</pre></p>
+<p>Throw in : '/opt/lampp/htdocs/RestCore/vendor/illuminate/database/Connection.php' on line 664</p>
+

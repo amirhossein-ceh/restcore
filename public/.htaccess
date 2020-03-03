@@ -1,0 +1,80 @@
+ErrorDocument 400 http://localhost:8080/Restcore/public/400.php
+
+ErrorDocument 401 http://localhost:8080/Restcore/public/401.php
+
+ErrorDocument 402 http://localhost:8080/Restcore/public/402.php
+
+ErrorDocument 403 http://localhost:8080/Restcore/public/403.php
+
+ErrorDocument 404 http://localhost:8080/Restcore/public/404.php
+
+ErrorDocument 405 http://localhost:8080/Restcore/public/405.php
+
+ErrorDocument 406 http://localhost:8080/Restcore/public/406.php
+
+ErrorDocument 407 http://localhost:8080/Restcore/public/407.php
+
+ErrorDocument 408 http://localhost:8080/Restcore/public/408.php
+
+ErrorDocument 409 http://localhost:8080/Restcore/public/409.php
+
+ErrorDocument 410 http://localhost:8080/Restcore/public/410.php
+
+ErrorDocument 411 http://localhost:8080/Restcore/public/411.php
+
+ErrorDocument 412 http://localhost:8080/Restcore/public/412.php
+
+ErrorDocument 413 http://localhost:8080/Restcore/public/413.php
+
+ErrorDocument 414 http://localhost:8080/Restcore/public/414.php
+
+ErrorDocument 415 http://localhost:8080/Restcore/public/415.php
+
+ErrorDocument 416 http://localhost:8080/Restcore/public/416.php
+
+ErrorDocument 417 http://localhost:8080/Restcore/public/417.php
+
+ErrorDocument 422 http://localhost:8080/Restcore/public/422.php
+
+ErrorDocument 423 http://localhost:8080/Restcore/public/423.php
+
+ErrorDocument 424 http://localhost:8080/Restcore/public/424.php
+
+ErrorDocument 500 http://localhost:8080/Restcore/public/500.php
+
+ErrorDocument 501 http://localhost:8080/Restcore/public/501.php
+
+ErrorDocument 502 http://localhost:8080/Restcore/public/502.php
+
+ErrorDocument 503 http://localhost:8080/Restcore/public/503.php
+
+ErrorDocument 504 http://localhost:8080/Restcore/public/504.php
+
+ErrorDocument 505 http://localhost:8080/Restcore/public/505.php
+
+ErrorDocument 506 http://localhost:8080/Restcore/public/506.php
+
+ErrorDocument 507 http://localhost:8080/Restcore/public/507.php
+
+ErrorDocument 510 http://localhost:8080/Restcore/public/510.php
+
+DirectoryIndex index.php
+
+IndexIgnore *
+
+AddDefaultCharset UTF-8
+
+#<FilesMatch "\.(ini|xml|json|html|txt)$">
+#Deny from all
+#</FilesMatch>
+
+<files ".htaccess">
+Order Deny,Allow
+Deny from all
+</files>
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1 [L,QSA]
