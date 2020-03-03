@@ -8,7 +8,7 @@ composer require amirhossein-ceh/restcore
 ### or
 
 ```bash
-git clone https://github.com/amirhossein-ceh/restcore.git
+$~ : git clone https://github.com/amirhossein-ceh/restcore.git
 ```
 
 ## Contributing
